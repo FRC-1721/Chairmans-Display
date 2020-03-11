@@ -15,17 +15,8 @@ void setup() {
     FastLED.addLeds<NEOPIXEL, DATA_PIN>(leds, NUM_LEDS);
 }
 
-void loop() { 
-  // Turn the LED on, then pause
-  fill_solid(leds, NUM_LEDS, CRGB::Red);
-  FastLED.show();
-  delay(500);
-  // Now turn the LED off, then pause
-  //leds[0] = CRGB::Black;
-  FastLED.clear();
-  FastLED.show();
-  delay(500);
-
+void loop() {
   // Testing
   testRing.setBright(20);
+  delay(500);
 }
